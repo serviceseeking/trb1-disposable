@@ -10,7 +10,7 @@ require "representable/decorator"
 module Trb1
   module Disposable
     class Twin
-      extend Declarative::Schema
+      extend Trb1::Declarative::Schema
       def self.definition_class
         Definition
       end

@@ -1,5 +1,5 @@
 class Trb1::Disposable::Twin
-  class Definition < Declarative::Definitions::Definition
+  class Definition < Trb1::Declarative::Definitions::Definition
     def getter
       self[:name]
     end

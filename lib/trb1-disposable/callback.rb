@@ -12,7 +12,7 @@ module Trb1::Disposable::Callback
   # you can call collection :songs again, with :inherit. TODO: verify.
 
   class Group
-    extend Declarative::Schema
+    extend Trb1::Declarative::Schema
 
     def self.default_nested_class
       Group
