@@ -17,14 +17,14 @@ class Trb1::Disposable::Twin
       end
     end
 
-    # Creates a fresh copy of the internal representer and adds Representable::Hash.
+    # Creates a fresh copy of the internal representer and adds Trb1::Representable::Hash.
     # This is used wherever a hash transformation is needed.
     def self.hash_representer(twin_class, &block)
       Trb1::Disposable::Rescheme.from(twin_class,
         recursive: false,
         definitions_from: lambda { |twin_class| twin_class.definitions },
-        superclass: Representable::Decorator,
-        include: Representable::Hash,
+        superclass: Trb1::Representable::Decorator,
+        include: Trb1::Representable::Hash,
         exclude_options: [:default], # TODO: TEST IN default_test.
         &block
       )

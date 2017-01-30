@@ -19,7 +19,7 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "trb1-uber"
   spec.add_dependency "trb1-declarative", ">= 0.0.8", "< 1.0.0"
-  spec.add_dependency "representable", ">= 2.4.0", "<= 3.1.0"
+  spec.add_dependency "trb1-representable", ">= 2.4.0", "<= 3.1.0"
 
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"

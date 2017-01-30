@@ -1,6 +1,6 @@
 require "trb1-uber/inheritable_attr"
 require "trb1-declarative/schema"
-require "representable/decorator"
+require "trb1-representable/decorator"
 
 # Twin.new(model/composition hash/hash, options)
 #   assign hash to @fields
